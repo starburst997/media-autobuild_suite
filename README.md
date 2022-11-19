@@ -1,6 +1,6 @@
 # Notessimo's Fork
 
-Minimal `ffmpeg.exe` to turn `.avi` into `.mp4`
+Minimal `ffmpeg.exe` to turn `.avi` into `.mp4` (1.85 MB)
 
 Clone this repository and simply launch `media-autobuild_suite.bat` to build an exact replica of `ffmpeg.exe` that is bundled with [Notessimo](https://notessimo.net)
 
