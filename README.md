@@ -1,3 +1,13 @@
+# Notessimo's Fork
+
+Simply launch `media-autobuild_suite.bat` to build an exact replica of `ffmpeg.exe` that is bundled with [Notessimo](https://notessimo.net)
+
+Includes [`libx264`](https://github.com/starburst997/x264/tree/notessimo-1), [`avisynth`](https://github.com/starburst997/AviSynthPlus/tree/notessimo-1)
+
+Currently use version [`5.0.2`](https://github.com/starburst997/FFmpeg/tree/notessimo-1) released on November 4th 2022.
+
+GIT url points on my own fork to makes sure binary is always the same
+
 # media-autobuild_suite
 
 Before opening an issue, check if it's an issue directly from executing the suite. This isn't Doom9, reddit, stackoverflow or any other forum for general questions about the things being compiled. This script builds them, that's all.

@@ -118,10 +118,10 @@
 --disable-network
 --disable-autodetect
 --enable-small
---enable-libopenh264
+--enable-libx264
 --enable-avisynth
 --enable-decoder=mjpeg,pcm_s16le
---enable-encoder=aac,mpeg4,libopenh264,pcm_s16le
+--enable-encoder=aac,mpeg4,libx264,pcm_s16le
 --enable-demuxer=aac,avi,h264,image2,pcm_s16le,m4v,rawvideo,wav
 --enable-muxer=h264,mp4,pcm_s16le
 --enable-parser=aac,h264,mjpeg,mpeg4video,mpegaudio,mpegvideo

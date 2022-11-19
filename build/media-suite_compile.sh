@@ -2,6 +2,10 @@
 # shellcheck disable=SC2034,SC1090,SC1117,SC1091,SC2119
 shopt -s extglob
 
+rm git_log.txt
+echo "" >> git_log.txt
+echo "GIT url used:" >> git_log.txt
+
 if [[ -z $LOCALBUILDDIR ]]; then
     printf '%s\n' \
         "Something went wrong." \
@@ -1502,7 +1506,7 @@ if [[ $x264 != no ]] ||
     _check=(x264{,_config}.h libx264.a x264.pc)
     [[ $standalone = y ]] && _check+=(bin-video/x264.exe)
     _bitdepth=$(get_api_version x264_config.h BIT_DEPTH)
-    if do_vcs "https://code.videolan.org/videolan/x264.git" ||
+    if do_vcs "https://github.com/starburst997/x264.git#branch=notessimo-1" ||
         [[ $x264 = o8   && $_bitdepth =~ (0|10) ]] ||
         [[ $x264 = high && $_bitdepth =~ (0|8) ]] ||
         [[ $x264 =~ (yes|full|shared|fullv) && "$_bitdepth" != 0 ]]; then
@@ -1878,7 +1882,7 @@ fi
 _check=(avisynth/avisynth{,_c}.h
         avisynth/avs/{alignment,arch,capi,config,cpuid,minmax,posix,types,win,version}.h)
 if [[ $ffmpeg != no ]] && enabled avisynth &&
-    do_vcs "https://github.com/AviSynth/AviSynthPlus.git"; then
+    do_vcs "https://github.com/starburst997/AviSynthPlus.git#branch=notessimo-1"; then
     do_uninstall "${_check[@]}"
     do_cmake -DHEADERS_ONLY=ON
     do_ninja VersionGen
