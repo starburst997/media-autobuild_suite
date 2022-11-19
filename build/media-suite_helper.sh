@@ -223,8 +223,6 @@ do_mabs_clone() {
 do_vcs() {
     local vcsURL=${1#*::} vcsFolder=$2 vcsCheck=("${_check[@]}")
 
-    echo "$vcsURL" >> git_log.txt
-
     local vcsBranch=${vcsURL#*#} ref=origin/HEAD
     local deps=("${_deps[@]}") && unset _deps
     [[ $vcsBranch == "$vcsURL" ]] && unset vcsBranch

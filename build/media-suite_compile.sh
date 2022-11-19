@@ -2,10 +2,6 @@
 # shellcheck disable=SC2034,SC1090,SC1117,SC1091,SC2119
 shopt -s extglob
 
-rm git_log.txt
-echo "" >> git_log.txt
-echo "GIT url used:" >> git_log.txt
-
 if [[ -z $LOCALBUILDDIR ]]; then
     printf '%s\n' \
         "Something went wrong." \
@@ -1564,7 +1560,7 @@ if [[ $x264 != no ]] ||
 
         if [[ $standalone = y ]]; then
             _check=("$LOCALDESTDIR/opt/lightffmpeg/lib/pkgconfig/liblsmash.pc")
-            if do_vcs "https://github.com/l-smash/l-smash.git" liblsmash; then
+            if do_vcs "https://github.com/starburst997/l-smash.git#branch=notessimo-1" liblsmash; then
                 [[ -f config.mak ]] && log "distclean" make distclean
                 do_uninstall "${_check[@]}"
                 create_build_dir

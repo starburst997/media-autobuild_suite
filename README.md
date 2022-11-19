@@ -1,12 +1,16 @@
 # Notessimo's Fork
 
-Simply launch `media-autobuild_suite.bat` to build an exact replica of `ffmpeg.exe` that is bundled with [Notessimo](https://notessimo.net)
+Minimal `ffmpeg.exe` to turn `.avi` into `.mp4`
 
-Includes [`libx264`](https://github.com/starburst997/x264/tree/notessimo-1), [`avisynth`](https://github.com/starburst997/AviSynthPlus/tree/notessimo-1)
+Clone this repository and simply launch `media-autobuild_suite.bat` to build an exact replica of `ffmpeg.exe` that is bundled with [Notessimo](https://notessimo.net)
 
-Currently use version [`5.0.2`](https://github.com/starburst997/FFmpeg/tree/notessimo-1) released on November 4th 2022.
+Includes [`x264`](https://github.com/starburst997/x264/tree/notessimo-1), [`AviSynthPlus`](https://github.com/starburst997/AviSynthPlus/tree/notessimo-1), [`l-smash`](https://github.com/starburst997/l-smash/tree/notessimo-1), [`upx`](https://github.com/starburst997/upx/tree/notessimo-1)
 
-GIT url points on my own fork to makes sure binary is always the same
+Currently use [`ffmpeg`](https://github.com/starburst997/FFmpeg/tree/notessimo-1) version `5.0.2` released on November 4th 2022.
+
+GIT url points on my own fork to makes sure binary is always the same.
+
+You can replace `ffmpeg.exe` with your own version or delete it and it will attempt to use the version installed on your computer.
 
 # media-autobuild_suite
 
