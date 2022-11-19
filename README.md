@@ -12,6 +12,8 @@ GIT url points on my own fork to makes sure binary is always the same.
 
 You can replace `ffmpeg.exe` with your own version or delete it and it will attempt to use the version installed on your computer.
 
+A [complete archive](https://cdn.notessimo.com/source/ffmpeg.exe.source.7z) / snapshot of the source is also available if any of the downloads from the script ever becomes unavailable.
+
 # media-autobuild_suite
 
 Before opening an issue, check if it's an issue directly from executing the suite. This isn't Doom9, reddit, stackoverflow or any other forum for general questions about the things being compiled. This script builds them, that's all.
