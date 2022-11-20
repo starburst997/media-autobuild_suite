@@ -2,7 +2,7 @@
 
 Minimal `ffmpeg.exe` to turn `.avi` into `.mp4` (1.52 MB)
 
-Clone this repository and simply launch `media-autobuild_suite.bat` to build an exact replica of `ffmpeg.exe` that is bundled with [Notessimo](https://notessimo.net), the binaries are then available at `local64/bin-video/ffmpeg.exe`.
+Clone this repository and simply launch `media-autobuild_suite.bat` to build an exact replica of `ffmpeg.exe` that is bundled with [Notessimo](https://notessimo.net), the binary is available at `./local64/bin-video/ffmpeg.exe`.
 
 Includes [`x264`](https://github.com/starburst997/x264/tree/notessimo-1), [`AviSynthPlus`](https://github.com/starburst997/AviSynthPlus/tree/notessimo-1), [`l-smash`](https://github.com/starburst997/l-smash/tree/notessimo-1), [`upx`](https://github.com/starburst997/upx/tree/notessimo-1)
 
