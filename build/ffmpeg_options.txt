@@ -114,19 +114,26 @@
 
 # Smallest possible build
 # https://stackoverflow.com/questions/54750953/how-to-compile-ffmpeg-to-get-only-mp3-and-mp4-support
+
 --disable-everything
 --disable-network
 --disable-autodetect
 --enable-small
---enable-libx264
+
+--enable-gpl
 --enable-avisynth
+--enable-libx264
+
 --enable-decoder=mjpeg,pcm_s16le
---enable-encoder=aac,mpeg4,libx264,pcm_s16le
+--enable-encoder=aac,libx264
 --enable-demuxer=aac,avi,h264,image2,pcm_s16le,m4v,rawvideo,wav
---enable-muxer=h264,mp4,pcm_s16le
+--enable-muxer=mp4,pcm_s16le
 --enable-parser=aac,h264,mjpeg,mpeg4video,mpegaudio,mpegvideo
 --enable-protocol=concat,file
 --enable-filter=transpose,aresample,scale
 
-#--disable-shared 
-#--enable-static
+--disable-ffprobe
+--enable-stripping
+--enable-static
+
+#--enable-shared 
